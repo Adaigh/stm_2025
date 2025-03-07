@@ -1,3 +1,5 @@
+import { PhoneLink, EmailLink } from "./util"
+
 export default function Main() {
 
     return (
@@ -9,14 +11,10 @@ export default function Main() {
             </p>
             <p>
                 To book an appointment call:
-                <a className="button-link" href="tel:509-893-2367">
-                    (509) 893-2367
-                </a>
+                <PhoneLink />
             </p>
             <p>After hours? Email:
-                <a className="button-link" href="mailto:stmtuning@hotmail.com">
-                    stmtuning@hotmail.com
-                </a>
+                <EmailLink />
             </p>
 
         </div>

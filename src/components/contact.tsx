@@ -1,21 +1,19 @@
+import { PhoneLink, EmailLink } from "./util"
+
 export default function Contact() {
     return (
-        <div className="section">
+        <div className="section" id="shop">
             <h3>Shop Information</h3>
 
             <ul>
                 <li>
-                <a className="button-link" href="tel:509-893-2367">
-                    (509) 893-2367
-                </a>
+                    <PhoneLink />
                 </li>
                 <li>
-                <a className="button-link" href="mailto:stmtuning@hotmail.com">
-                    stmtuning@hotmail.com
-                </a>
+                    <EmailLink />
                 </li>
                 <li>
-                4715 E Trent Ave, Spokane, WA 99212 
+                    4715 E Trent Ave, Spokane, WA 99212
                 </li>
                 <li>
                     Hours: 9am-5pm, Monday through Friday

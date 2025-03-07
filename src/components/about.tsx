@@ -1,6 +1,6 @@
 export default function About() {
     return (
-        <div className="section">
+        <div className="section" id="about">
             <h3>About STM:</h3>
             <ul>
                 <li>
