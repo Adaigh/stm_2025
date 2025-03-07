@@ -5,4 +5,13 @@ h1, h2, h3 {
   font-family: "Black Ops One", monospace;
 }
 
+img {
+  max-height: 150px;
+  width: 50%;
+}
+
+.section {
+  margin: 10%;
+}
+
 /*# sourceMappingURL=index.css.map */

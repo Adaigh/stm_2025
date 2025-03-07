@@ -6,8 +6,12 @@ I intend to build this website using React and deploying via AWS S3 hosting.
 
 ### Updates
 
-1. 03/05/25
+1. 03-05-2025
     - Reconsidered project setup and re-launched from `npm create vite@latest` while transferring relevant files.
     - Using TS + React + Bootstrap
     - Tested setup with google fonts and bootstrap CDN link (since CDN is usually already downloaded)
 
+2. 03-06-2025
+    - Stole a few things like phone links and google maps links from old projects
+    - Some styling changes to get a general layout for the page info.
+    - Minor content updates to better prep the site layout.
