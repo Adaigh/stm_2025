@@ -15,3 +15,10 @@ I intend to build this website using React and deploying via AWS S3 hosting.
     - Stole a few things like phone links and google maps links from old projects
     - Some styling changes to get a general layout for the page info.
     - Minor content updates to better prep the site layout.
+
+3. 03-10-2025
+    - Meeting with owner resulted in content updates:
+        - Include placeholders for affiliate links.
+        - Restructured placeholders for about section.
+        - Re-used google and apple maps links from previous projects.
+    - Added some basic css to improve development and debugging.
