@@ -9,6 +9,10 @@
 // Importing custom styling?
 // @import "./custom";
 
+* {
+    border: 1px solid red;
+}
+
 h1, h2, h3 {
     font-family: 'Black Ops One', monospace;
 }
@@ -18,6 +22,15 @@ img {
     width: 50%;
 }
 
+ul {
+    list-style: none;
+}
+
 .section {
     margin: 10%;
+}
+
+.map-icon img{
+    max-width: 20px;
+    margin-left: 40px;
 }
