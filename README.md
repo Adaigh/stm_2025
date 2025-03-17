@@ -22,3 +22,7 @@ I intend to build this website using React and deploying via AWS S3 hosting.
         - Restructured placeholders for about section.
         - Re-used google and apple maps links from previous projects.
     - Added some basic css to improve development and debugging.
+
+4. 03-17-2025
+    - Content updates: Most of the text is near-final.
+    - Style updates: Basic background/font colors and a box-shadow test.
