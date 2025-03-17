@@ -7,20 +7,31 @@ export default function Main() {
         <div className="section">
             <h1>STM Tuning</h1>
             <h6>European import garage</h6>
-            <pre>
-                Providing<br />
-                &nbsp;<b>performance</b>,<br />
-                &nbsp;&nbsp;<b>maintenance</b>,<br />
-                &nbsp;&nbsp;&nbsp;and <b>repair</b> work<br/>
-                in Spokane, WA<br />
+            <p>
+                Providing
+                <ul className="service-link-list">
+                    <li>
+                        <span className="service-link">performance</span>,
+                    </li>
+                    <li>
+                        <span className="service-link">maintenance</span>,
+                    </li>
+                    <li>
+                        and <span className="service-link">repair</span> work
+                    </li>
+                </ul>
+                in Spokane, WA
+                <br />
                 Specializing in Volkswagen and Audi.
-            </pre>
+                <br />
+                Open M-F, 9am - 5pm
+            </p>
             <p>
                 {/* To book an appointment call: */}
-                Call for an appointment:&nbsp;&nbsp;
+                Call for an appointment!
                 <PhoneLink />
             </p>
-            <p>After hours?&nbsp;&nbsp;
+            <p>After hours?
                 <EmailLink />
             </p>
             <br></br>

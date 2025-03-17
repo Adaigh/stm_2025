@@ -15,3 +15,7 @@ export function EmailLink() {
         </a>
     )
 }
+
+export interface Dict<T> {
+    [key: string]: T;
+}
