@@ -6,18 +6,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 
-// Importing custom styling?
-// @import "./custom";
 
+
+// Variables
+$headerColor: #DFF7FA;
+$fontColor: #DDD;
+$shadowColor: #115;
+
+// Element-level styles
 * {
     border: 1px solid red;
+    color: $fontColor;
 }
 
 h1, h2, h3 {
     font-family: 'Black Ops One', monospace;
 }
 
-img {
+h1, h2, h3, h4, h5, h6 {
+    color: $headerColor;
+}
+
+nav img {
     max-height: 150px;
     width: 50%;
 }
@@ -26,11 +36,15 @@ ul {
     list-style: none;
 }
 
-.section {
-    margin: 10%;
-}
+// Class-level styles
 
 .map-icon img{
     max-width: 20px;
     margin-left: 40px;
+}
+
+.section {
+    margin: 10% 0;
+    padding: 0 10%;
+    box-shadow: 0 0 3em rgba(100, 100, 255, 0.5);
 }

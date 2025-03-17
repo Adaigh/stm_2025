@@ -9,11 +9,11 @@ import Contact from "./components/contact"
 
 export default function App() {
   return (
-    <>
+    <div className="bg-dark">
       <NavBar />
       <Main />
       <About />
       <Contact />
-    </>
+    </div>
   )
 }
