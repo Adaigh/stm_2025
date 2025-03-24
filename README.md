@@ -26,3 +26,9 @@ I intend to build this website using React and deploying via AWS S3 hosting.
 4. 03-17-2025
     - Content updates: Most of the text is near-final.
     - Style updates: Basic background/font colors and a box-shadow test.
+
+5. 03-24-2025
+    - Structure updates:
+        - Refactored Navbar to simplify html elements and allow for more intentional styling.
+        - Refactored component elements to apply shared style classes in central location.
+    - Style update: Implemented sizing and gradient updates to prepare for more images.
