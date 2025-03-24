@@ -4,7 +4,7 @@ import { Dict } from "./util";
 export default function About() {
 
     return (
-        <div className="section" id="about">
+        <div id="about">
             <h3>About STM:</h3>
             <ul>
                 {notes.map((val, index) => {

@@ -4,7 +4,7 @@ import a_logo from '../assets/apple_logo.png'
 
 export default function Contact() {
     return (
-        <div className="section" id="shop">
+        <div id="shop">
             <h3>Shop Information</h3>
 
             <ul>
