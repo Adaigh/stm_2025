@@ -20,7 +20,7 @@ export default function About() {
                 {Object.keys(services).map((val, index) => {
                     var serviceKey = val + index
                     return (
-                        <DropDownList serviceName={val} parentKey={serviceKey} />
+                        <ServiceList serviceName={val} parentKey={serviceKey} />
                     )
                 })}
             </div>
@@ -33,7 +33,7 @@ interface ListProps {
     parentKey:string;
 }
 
-const DropDownList: FC<ListProps> = ({serviceName, parentKey}) => {
+const ServiceList: FC<ListProps> = ({serviceName, parentKey}) => {
 
     return (
         <>
@@ -42,7 +42,7 @@ const DropDownList: FC<ListProps> = ({serviceName, parentKey}) => {
                 {services[serviceName].map((v, i) => {
                     var indServiceKey = parentKey + i
                     return (
-                        <li key={indServiceKey}>
+                        <li key={indServiceKey} className="my-2">
                             {v}
                         </li>
                     )
