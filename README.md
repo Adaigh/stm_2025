@@ -32,3 +32,7 @@ I intend to build this website using React and deploying via AWS S3 hosting.
         - Refactored Navbar to simplify html elements and allow for more intentional styling.
         - Refactored component elements to apply shared style classes in central location.
     - Style update: Implemented sizing and gradient updates to prepare for more images.
+
+6. 03-28-2025
+    - Bootstrap bug resolved: Found that I was using the wrong CDN link, resulting in unexpected behavior.
+    - Styling updates: Introduced some styling updates, but ran out of time to double check with bug resolution.
