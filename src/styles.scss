@@ -11,9 +11,12 @@
 // Variables and base classes
 $headerColor: #DFF7FA;
 $fontColor: #DDD;
-$shadowColor: #115;
 
+$bg_color: #343a40;
 $bg_gradient: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 55, 1), rgba(0, 0, 0, 0));
+
+$divider_gradient: linear-gradient(to right, #0039a6, #eee);
+
 
 .clamper {
     width: clamp(300px, 100%, 800px);
@@ -23,20 +26,24 @@ $bg_gradient: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 55, 1), rgba(0, 0, 0,
 
 // Element-level styles
 * {
-    border: 1px solid red;
+    border: 1px solid rgba(255, 0, 0, 0.2);
     color: $fontColor;
     font-size: 0.9rem;
 }
 
 body {
-    background-color: #343a40;
-
+    background-color: $bg_color;
 }
 
 h1,
 h2,
 h3 {
     font-family: 'Black Ops One', monospace;
+    text-shadow: #000 2px;
+}
+
+h1 {
+    font-size: 2.8rem;
 }
 
 h1,
@@ -60,8 +67,15 @@ ul {
 
 .gradient {
     background: $bg_gradient !important;
-    margin-bottom: max(250px, 10%);
+    
 }
+
+.gradient::before{
+    content: "";
+    display: block;
+    height: 5px;
+    background: $divider_gradient;
+  }
 
 .map-icon img {
     max-width: 20px;
@@ -70,7 +84,9 @@ ul {
 
 .section {
     @extend .clamper;
-    padding: 10%;
+    padding: 8%;
+    margin-bottom: max(250px, 10%);
+    
 }
 
 // .section > div {
@@ -78,6 +94,19 @@ ul {
 //     margin-left: auto;
 //     margin-right: auto;
 // }
+
+.service-li-1 {
+    margin-left: 10%;
+}
+
+.service-li-2 {
+    margin-left: 20%;
+
+}
+
+.service-li-3 {
+    margin-left: 30%;
+}
 
 .service-link {
     font-weight: 700;

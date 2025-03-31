@@ -7,21 +7,22 @@ export default function Main() {
             <div>
 
                 <h1>STM Tuning</h1>
-                <h6>European import garage</h6>
-                <p>
+                <h6 className="text-end fs-6">- European import garage</h6>
+                <p className="px-sm-5">
                     Providing
-                    <ul className="service-link-list">
-                        <li>
-                            <span className="service-link">performance</span>,
+                    <ul className="service-link-list p-0">
+                        <li className="service-li-1">
+                            <span className="fw-bolder fst-italic">performance</span>,
                         </li>
-                        <li>
-                            <span className="service-link">maintenance</span>,
+                        <li className="service-li-2">
+                            <span className="fw-bolder fst-italic">maintenance</span>,
                         </li>
-                        <li>
-                            and <span className="service-link">repair</span> work
+                        <li className="service-li-3">
+                            and <span className="fw-bolder fst-italic">repair</span> work
                         </li>
                     </ul>
-                    in Spokane, WA
+                    in Spokane, WA for over 20 years!
+                    <br />
                     <br />
                     Specializing in Volkswagen and Audi.
                     <br />

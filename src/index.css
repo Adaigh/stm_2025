@@ -8,7 +8,7 @@
 }
 
 * {
-  border: 1px solid red;
+  border: 1px solid rgba(255, 0, 0, 0.2);
   color: #DDD;
   font-size: 0.9rem;
 }
@@ -21,6 +21,11 @@ h1,
 h2,
 h3 {
   font-family: "Black Ops One", monospace;
+  text-shadow: #000 2px;
+}
+
+h1 {
+  font-size: 2.8rem;
 }
 
 h1,
@@ -38,7 +43,13 @@ ul {
 
 .gradient {
   background: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 55), rgba(0, 0, 0, 0)) !important;
-  margin-bottom: max(250px, 10%);
+}
+
+.gradient::before {
+  content: "";
+  display: block;
+  height: 5px;
+  background: linear-gradient(to right, #0039a6, #eee);
 }
 
 .map-icon img {
@@ -47,7 +58,20 @@ ul {
 }
 
 .section {
-  padding: 10%;
+  padding: 8%;
+  margin-bottom: max(250px, 10%);
+}
+
+.service-li-1 {
+  margin-left: 10%;
+}
+
+.service-li-2 {
+  margin-left: 20%;
+}
+
+.service-li-3 {
+  margin-left: 30%;
 }
 
 .service-link {
