@@ -37,8 +37,14 @@ I intend to build this website using React and deploying via AWS S3 hosting.
     - Bootstrap bug resolved: Found that I was using the wrong CDN link, resulting in unexpected behavior.
     - Styling updates: Introduced some styling updates, but ran out of time to double check with bug resolution.
 
-7. 03-31-2026 (30 min)
+7. 03-31-2025 (30 min)
     - Font styling updates for size and weight in a few areas, mostly 'main'.
     - Some refactoring of 'main', mostly text-stylign focused.
     - Minor refactoring of navbar for mobile spacing.
-    - Added working time estimations for personal time tracking. 
+    - Added working time estimations for personal time tracking.
+
+8. 05-09-2025   (2hrs total)
+    - This is gonna be a bulk commit to catch up on little updates I've been doing over the last month.
+    - Many styling/structural updates, mostly focused on aesthetics.
+    - Uploaded affiliate images but still need to link them to websites.
+    - Minor changes to the dev package to make working with sass more convenient (Thanks @concurrently!)

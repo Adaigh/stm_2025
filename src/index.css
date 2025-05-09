@@ -1,31 +1,31 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
-.clamper, .section, .base-div {
-  width: clamp(300px, 100%, 800px);
+.clamper, .bg-card, .card-blue, .card-light, .base-div {
+  width: clamp(300px, 100%, 1000px);
   margin-left: auto;
   margin-right: auto;
 }
 
 * {
-  border: 1px solid rgba(255, 0, 0, 0.2);
   color: #DDD;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
 }
 
 body {
-  background-color: #343a40;
+  background: linear-gradient(#212529, rgba(33, 37, 41, 0.5), #212529), url("./assets/tile_v1_1.png");
+  background-size: 25rem;
 }
 
 h1,
 h2,
 h3 {
   font-family: "Black Ops One", monospace;
-  text-shadow: #000 2px;
-}
-
-h1 {
-  font-size: 2.8rem;
 }
 
 h1,
@@ -37,19 +37,36 @@ h6 {
   color: #DFF7FA;
 }
 
-ul {
-  list-style: none;
+h1 {
+  padding-top: 5%;
+  font-size: 2.8rem;
 }
 
-.gradient {
-  background: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 55), rgba(0, 0, 0, 0)) !important;
+.bg-card, .card-blue, .card-light {
+  padding: 5%;
+  border-radius: 25px;
+  margin-bottom: 10%;
 }
 
-.gradient::before {
-  content: "";
-  display: block;
-  height: 5px;
-  background: linear-gradient(to right, #0039a6, #eee);
+.border-card {
+  border: 5px solid #DDD;
+  border-radius: 25px;
+  padding: 5%;
+  margin-top: 10%;
+}
+
+.card-light {
+  background: rgba(207, 226, 255, 0.8);
+}
+.card-light * {
+  color: #000;
+}
+.card-light h1 {
+  text-shadow: 2px 2px 2px #DDD;
+}
+
+.card-blue {
+  background: rgba(13, 110, 253, 0.8);
 }
 
 .map-icon img {
@@ -57,30 +74,15 @@ ul {
   margin-left: 40px;
 }
 
-.section {
-  padding: 8%;
-  margin-bottom: max(250px, 10%);
-}
-
-.service-li-1 {
-  margin-left: 10%;
-}
-
-.service-li-2 {
-  margin-left: 20%;
-}
-
-.service-li-3 {
-  margin-left: 30%;
-}
-
-.service-link {
-  font-weight: 700;
-}
-
 @media screen and (min-width: 720px) {
+  .bg-card, .card-light, .card-blue {
+    margin-top: 3%;
+  }
   * {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+  }
+  h1 {
+    font-size: 4rem;
   }
 }
 

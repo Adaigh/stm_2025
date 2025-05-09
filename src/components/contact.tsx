@@ -15,9 +15,7 @@ export default function Contact() {
                     Email | <EmailLink />
                 </li>
                 <li>
-                    Address | 4715 E Trent Ave, Spokane, WA 99212 
-                    &nbsp;&nbsp;
-                    <u>Get Directions</u>:
+                    Address | 4715 E Trent Ave, Spokane, WA 99212&nbsp;&nbsp;
                     <a className="map-icon" href="https://maps.app.goo.gl/QbksovXGtDDT5ptB9"
                         target="_blank" rel="noreferrer"><img src={g_logo} /></a>
                     <a className="map-icon" href="http://maps.apple.com/?address=STM+Tuning+4715,E+Trent+Ave,Spokane,WA,99212"

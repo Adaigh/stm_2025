@@ -6,12 +6,12 @@ import NavBar from "./components/navbar"
 import Main from "./components/main"
 import About from "./components/about"
 import Contact from "./components/contact"
-import { ReactNode } from "react"
+import Affiliates from "./components/affiliates"
 
 export default function App() {
 
   return (
-    <div className="bg-dark">
+    <div className="">
       <NavBar />
       <Sections />
     </div>
@@ -20,19 +20,25 @@ export default function App() {
 
 
 function Sections() {
-  const included: ReactNode[] = [<Main />, <About />, <Contact />];
 
   return (
     <>
-      {included.map((item) => {
-        return (
-          <div className="gradient">
-            <div className="section">
-              {item}
-            </div>
-          </div>
-        )
-      })}
+      <div className="card-light">
+        {/* <div className="section"> */}
+          <Main />
+          <Affiliates />
+        {/* </div> */}
+      </div>
+      <div className="card-blue">
+        {/* <div className="section"> */}
+          <About />
+        {/* </div> */}
+      </div>
+      <div className="card-light">
+        {/* <div className="section"> */}
+          <Contact />
+        {/* </div> */}
+      </div>
     </>
   )
 

@@ -1,17 +1,30 @@
+import { ReactNode } from "react";
 
-export function PhoneLink() {
+type LinkProps = {
+    className?: string;
+    children?: ReactNode;
+}
+
+export function PhoneLink({ className }: LinkProps) {
     return (
         <a className="button-link" href="tel:509-893-2367">
-            (509) 893-2367
+            <span className={className}>
+                (509) 893-2367
+            </span>
         </a>
     )
 }
 
 
-export function EmailLink() {
+export function EmailLink({ className, children }: LinkProps) {
+
+
     return (
         <a className="button-link" href="mailto:stmtuning@hotmail.com">
-            stmtuning@hotmail.com
+            <span className={className}>
+                {!children && <>stmtuning@hotmail.com</>}
+                {children}
+            </span>
         </a>
     )
 }

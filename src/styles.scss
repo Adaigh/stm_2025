@@ -11,39 +11,41 @@
 // Variables and base classes
 $headerColor: #DFF7FA;
 $fontColor: #DDD;
+$bg_dark: #212529;
+$bg_blue: rgba(13, 110, 253, 0.8);
+$bg_light: rgba(207, 226, 255, 0.8);
 
-$bg_color: #343a40;
-$bg_gradient: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 55, 1), rgba(0, 0, 0, 0));
+$bg_dark_50: rgba(33, 37, 41, 0.5);
 
-$divider_gradient: linear-gradient(to right, #0039a6, #eee);
-
+$dark_gradient: linear-gradient($bg_dark, $bg_dark_50, $bg_dark);
 
 .clamper {
-    width: clamp(300px, 100%, 800px);
+    width: clamp(300px, 100%, 1000px);
     margin-left: auto;
     margin-right: auto;
 }
 
 // Element-level styles
 * {
-    border: 1px solid rgba(255, 0, 0, 0.2);
+    // border: 1px solid rgba(255, 0, 0, 0.2);
     color: $fontColor;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
 }
 
 body {
-    background-color: $bg_color;
+    background: $dark_gradient, url('./assets/tile_v1_1.png');
+    background-size: 25rem;
 }
 
 h1,
 h2,
 h3 {
     font-family: 'Black Ops One', monospace;
-    text-shadow: #000 2px;
-}
-
-h1 {
-    font-size: 2.8rem;
 }
 
 h1,
@@ -55,8 +57,9 @@ h6 {
     color: $headerColor;
 }
 
-ul {
-    list-style: none;
+h1 {
+    padding-top: 5%;
+    font-size: 2.8rem;
 }
 
 // Class-level styles
@@ -65,55 +68,53 @@ ul {
     @extend .clamper;
 }
 
-.gradient {
-    background: $bg_gradient !important;
-    
+.bg-card {
+    @extend .clamper;
+    padding: 5%;
+    border-radius: 25px;
+    margin-bottom: 10%;
 }
 
-.gradient::before{
-    content: "";
-    display: block;
-    height: 5px;
-    background: $divider_gradient;
-  }
+.border-card {
+    border: 5px solid $fontColor;
+    border-radius: 25px;
+    padding: 5%;
+    margin-top: 10%;
+}
+
+.card-light {
+    @extend .bg-card;
+    background: $bg_light;
+
+    * {
+        color: #000;
+    }
+
+    h1 {
+        text-shadow: 2px 2px 2px $fontColor;
+    }
+}
+
+.card-blue {
+    @extend .bg-card;
+    background: $bg_blue;
+}
 
 .map-icon img {
     max-width: 20px;
     margin-left: 40px;
 }
 
-.section {
-    @extend .clamper;
-    padding: 8%;
-    margin-bottom: max(250px, 10%);
-    
-}
-
-// .section > div {
-//     max-width: fit-content;
-//     margin-left: auto;
-//     margin-right: auto;
-// }
-
-.service-li-1 {
-    margin-left: 10%;
-}
-
-.service-li-2 {
-    margin-left: 20%;
-
-}
-
-.service-li-3 {
-    margin-left: 30%;
-}
-
-.service-link {
-    font-weight: 700;
-}
-
 @media screen and (min-width: 720px) {
+    .bg-card {
+        margin-top: 3%;
+    }
+
     * {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
+    }
+
+    h1 {
+        font-size: 4rem;
     }
 }
