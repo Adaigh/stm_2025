@@ -8,7 +8,7 @@
 }
 
 * {
-  color: #DDD;
+  color: #eee;
   font-size: 1rem;
   font-weight: 500;
 }
@@ -49,7 +49,7 @@ h1 {
 }
 
 .border-card {
-  border: 5px solid #DDD;
+  border: 5px solid #eee;
   border-radius: 25px;
   padding: 5%;
   margin-top: 10%;
@@ -62,16 +62,36 @@ h1 {
   color: #000;
 }
 .card-light h1 {
-  text-shadow: 2px 2px 2px #DDD;
+  text-shadow: 2px 2px 2px #eee;
 }
 
 .card-blue {
   background: rgba(13, 110, 253, 0.8);
 }
 
-.map-icon img {
-  max-width: 20px;
-  margin-left: 40px;
+.custom-button {
+  background: #212529;
+  transition: background 0.3s ease;
+}
+
+.map-icon {
+  background: #212529;
+  transition: background 0.3s ease;
+}
+
+.custom-button:hover,
+.map-icon:hover,
+.phone-icon:hover {
+  background: rgba(150, 150, 150, 0.8);
+}
+
+.phone-icon {
+  background: #DFF7FA;
+  transition: background 0.3s ease;
+}
+
+.phone-icon svg {
+  transform: translateY(5px);
 }
 
 @media screen and (min-width: 720px) {

@@ -37,7 +37,9 @@ const ServiceList: FC<ListProps> = ({serviceName, parentKey}) => {
 
     return (
         <>
-            <h6 key={parentKey}> {serviceName}</ h6 >
+            <hr className="text-dark"/>
+            <h3 className="fs-4 p-3" key={parentKey}> {serviceName}</h3>
+            <hr className="text-dark"/>
             <ul>
                 {services[serviceName].map((v, i) => {
                     var indServiceKey = parentKey + i

@@ -48,3 +48,11 @@ I intend to build this website using React and deploying via AWS S3 hosting.
     - Many styling/structural updates, mostly focused on aesthetics.
     - Uploaded affiliate images but still need to link them to websites.
     - Minor changes to the dev package to make working with sass more convenient (Thanks @concurrently!)
+
+9. 05-30-2025 (45 min)
+    - Styling and structure updates for contact links.
+    - Styling updates for hero links.
+    - Styling updates for 'about' headers.
+    - TODO: Link affiliate icons to websites.
+    - Feels like it's almost there!
+    - Realized I had 'main.tsx' in two places, renamed the hero to 'hero.tsx'

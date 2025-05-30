@@ -3,7 +3,7 @@
 // import viteLogo from '/vite.svg'
 
 import NavBar from "./components/navbar"
-import Main from "./components/main"
+import Hero from "./components/hero"
 import About from "./components/about"
 import Contact from "./components/contact"
 import Affiliates from "./components/affiliates"
@@ -25,7 +25,7 @@ function Sections() {
     <>
       <div className="card-light">
         {/* <div className="section"> */}
-          <Main />
+          <Hero />
           <Affiliates />
         {/* </div> */}
       </div>

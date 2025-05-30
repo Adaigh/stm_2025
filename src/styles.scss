@@ -10,10 +10,11 @@
 
 // Variables and base classes
 $headerColor: #DFF7FA;
-$fontColor: #DDD;
+$fontColor: #eee;
 $bg_dark: #212529;
 $bg_blue: rgba(13, 110, 253, 0.8);
 $bg_light: rgba(207, 226, 255, 0.8);
+$bg_hover: rgba(150, 150, 150, 0.8);
 
 $bg_dark_50: rgba(33, 37, 41, 0.5);
 
@@ -100,11 +101,30 @@ h1 {
     background: $bg_blue;
 }
 
-.map-icon img {
-    max-width: 20px;
-    margin-left: 40px;
+.custom-button {
+    background: $bg_dark;
+    transition: background 0.3s ease;
 }
 
+.map-icon {
+    background: $bg_dark;
+    transition: background 0.3s ease;
+}
+
+.custom-button:hover,
+.map-icon:hover,
+.phone-icon:hover {
+    background: $bg_hover;
+}
+
+.phone-icon {
+    background: $headerColor;
+    transition: background 0.3s ease;
+}
+
+.phone-icon svg {
+    transform: translateY(5px);
+}
 @media screen and (min-width: 720px) {
     .bg-card {
         margin-top: 3%;

@@ -2,7 +2,7 @@ import { PhoneLink, EmailLink } from "./util"
 import { IconContext } from "react-icons"
 import { FaEnvelope } from "react-icons/fa"
 
-export default function Main() {
+export default function Hero() {
 
     return (
         <div className="d-flex flex-column gap-3 gap-md-5">
@@ -37,7 +37,7 @@ function intro() {
     )
 }
 
-const buttonClasses = "d-block p-3 rounded-4 bg-dark text-light shadow-lg"
+const buttonClasses = "custom-button d-block p-3 rounded-4 text-light shadow-lg"
 
 function phone() {
     return (
