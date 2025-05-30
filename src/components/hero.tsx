@@ -1,6 +1,4 @@
 import { PhoneLink, EmailLink } from "./util"
-import { IconContext } from "react-icons"
-import { FaEnvelope } from "react-icons/fa"
 
 export default function Hero() {
 
