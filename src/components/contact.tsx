@@ -1,7 +1,6 @@
 import { FaPhone } from "react-icons/fa"
 import { PhoneLink, EmailLink } from "./util"
 import g_logo from '../assets/google_logo.png'
-// import a_logo from '../assets/apple_logo.png'
 import a_logo from '../assets/apple_maps_logo.png'
 
 export default function Contact() {
