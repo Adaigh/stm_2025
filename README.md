@@ -53,6 +53,15 @@ I intend to build this website using React and deploying via AWS S3 hosting.
     - Styling and structure updates for contact links.
     - Styling updates for hero links.
     - Styling updates for 'about' headers.
-    - TODO: Link affiliate icons to websites.
     - Feels like it's almost there!
     - Realized I had 'main.tsx' in two places, renamed the hero to 'hero.tsx'
+
+10. 06-02-2025 (60 min)
+    - Affiliate links implemented.
+    - Icons adjusted for visibility.
+    - Contact buttons refactored for responsive stability.
+    - Text styling for improve readability.
+    - Screen-responsive styling adjustments
+
+# TODO:
+- Link 'about' sections to the words in the hero message?

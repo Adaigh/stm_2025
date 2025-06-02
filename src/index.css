@@ -42,9 +42,14 @@ h1 {
   font-size: 2.8rem;
 }
 
+#about {
+  scroll-margin-top: 50px;
+  text-shadow: 1px 1px 1px #212529;
+}
+
 .bg-card, .card-blue, .card-light {
   padding: 5%;
-  border-radius: 25px;
+  border-radius: 10px;
   margin-bottom: 10%;
 }
 
@@ -69,40 +74,49 @@ h1 {
   background: rgba(13, 110, 253, 0.8);
 }
 
+.contact-icon, .icon-bg-light, .icon-bg-dark {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .custom-button {
   background: #212529;
   transition: background 0.3s ease;
 }
 
-.map-icon {
+.icon-bg-dark {
   background: #212529;
   transition: background 0.3s ease;
 }
 
-.custom-button:hover,
-.map-icon:hover,
-.phone-icon:hover {
-  background: rgba(150, 150, 150, 0.8);
-}
-
-.phone-icon {
+.icon-bg-light {
   background: #DFF7FA;
   transition: background 0.3s ease;
 }
 
-.phone-icon svg {
-  transform: translateY(5px);
+.custom-button:hover,
+.icon-bg-dark:hover,
+.icon-bg-light:hover {
+  background: rgba(150, 150, 150, 0.8);
 }
 
 @media screen and (min-width: 720px) {
-  .bg-card, .card-light, .card-blue {
-    margin-top: 3%;
-  }
   * {
     font-size: 1.2rem;
   }
   h1 {
     font-size: 4rem;
+  }
+  #about {
+    scroll-margin-top: 150px;
+  }
+  .bg-card, .card-light, .card-blue {
+    border-radius: 25px;
+    margin-top: 3%;
   }
 }
 

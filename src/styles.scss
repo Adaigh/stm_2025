@@ -30,6 +30,7 @@ $dark_gradient: linear-gradient($bg_dark, $bg_dark_50, $bg_dark);
 * {
     // border: 1px solid rgba(255, 0, 0, 0.2);
     color: $fontColor;
+    
     font-size: 1rem;
     font-weight: 500;
 }
@@ -63,6 +64,12 @@ h1 {
     font-size: 2.8rem;
 }
 
+// ID-level styles
+#about {
+    scroll-margin-top: 50px;
+    text-shadow: 1px 1px 1px $bg_dark;
+}
+
 // Class-level styles
 
 .base-div {
@@ -72,7 +79,7 @@ h1 {
 .bg-card {
     @extend .clamper;
     padding: 5%;
-    border-radius: 25px;
+    border-radius: 10px;
     margin-bottom: 10%;
 }
 
@@ -101,40 +108,53 @@ h1 {
     background: $bg_blue;
 }
 
+.contact-icon {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .custom-button {
     background: $bg_dark;
     transition: background 0.3s ease;
 }
 
-.map-icon {
+.icon-bg-dark {
+    @extend .contact-icon;
     background: $bg_dark;
     transition: background 0.3s ease;
 }
 
-.custom-button:hover,
-.map-icon:hover,
-.phone-icon:hover {
-    background: $bg_hover;
-}
-
-.phone-icon {
+.icon-bg-light {
+    @extend .contact-icon;
     background: $headerColor;
     transition: background 0.3s ease;
 }
 
-.phone-icon svg {
-    transform: translateY(5px);
+.custom-button:hover,
+.icon-bg-dark:hover,
+.icon-bg-light:hover {
+    background: $bg_hover;
 }
-@media screen and (min-width: 720px) {
-    .bg-card {
-        margin-top: 3%;
-    }
 
+@media screen and (min-width: 720px) {
     * {
         font-size: 1.2rem;
     }
 
     h1 {
         font-size: 4rem;
+    }
+
+    #about {
+        scroll-margin-top: 150px;
+    }
+
+    .bg-card {
+        border-radius: 25px;
+        margin-top: 3%;
     }
 }

@@ -53,7 +53,7 @@ function email() {
             {/* Open 9-5, Monday thru Friday */}
             <EmailLink className={buttonClasses}>
                 <img
-                    src="../../public/envelope-icon.png"
+                    src="envelope-icon.png"
                     alt="Email"
                     className="me-2"
                     style={{ width: "35px"}}

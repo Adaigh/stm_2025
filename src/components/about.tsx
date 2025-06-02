@@ -4,7 +4,7 @@ import { Dict } from "./util";
 export default function About() {
 
     return (
-        <div id="about">
+        <div id="about" className="text-dark">
             <h3>About STM:</h3>
             <ul>
                 {notes.map((val, index) => {
@@ -16,7 +16,7 @@ export default function About() {
                     )
                 })}
             </ul>
-            <div className="container-fluid">
+            <div className="container-fluid ">
                 {Object.keys(services).map((val, index) => {
                     var serviceKey = val + index
                     return (
