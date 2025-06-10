@@ -1,4 +1,16 @@
+/**
+ * Hero.tsx
+ * This file serves as the Hero section of the app,
+ * containing the title, introduction, and contact buttons
+ * in a simple Call-to-Action format.
+ * 
+ * Author: Alexander Daigh
+ * Date: 06-10-2025
+ * Version: 1.0.0
+ */
+
 import { PhoneLink, EmailLink } from "./util"
+import envelope_icon from '/images/envelope-icon.png'
 
 export default function Hero() {
 
@@ -53,7 +65,7 @@ function email() {
             {/* Open 9-5, Monday thru Friday */}
             <EmailLink className={buttonClasses}>
                 <img
-                    src="envelope-icon.png"
+                    src={envelope_icon}
                     alt="Email"
                     className="me-2"
                     style={{ width: "35px"}}

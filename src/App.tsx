@@ -1,6 +1,13 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
+/**
+ * App.tsx
+ * This file serves as the main layout component for the app,
+ * contorlling the rendering of the navigation bar and various sections
+ * including Hero, Affiliates, About, and Contact components.
+ * 
+ * Author: Alexander Daigh
+ * Date: 06-10-2025
+ * Version: 1.0.0
+ */
 
 import NavBar from "./components/navbar"
 import Hero from "./components/hero"
@@ -24,20 +31,14 @@ function Sections() {
   return (
     <>
       <div className="card-light">
-        {/* <div className="section"> */}
           <Hero />
           <Affiliates />
-        {/* </div> */}
       </div>
       <div className="card-blue">
-        {/* <div className="section"> */}
           <About />
-        {/* </div> */}
       </div>
       <div className="card-light">
-        {/* <div className="section"> */}
           <Contact />
-        {/* </div> */}
       </div>
     </>
   )

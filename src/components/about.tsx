@@ -1,3 +1,13 @@
+/**
+ * About.tsx
+ * This file serves as the About section of the app,
+ * containing information about the shop and its services.
+ * 
+ * Author: Alexander Daigh
+ * Date: 06-10-2025
+ * Version: 1.0.0
+ */
+
 import {FC} from "react";
 import { Dict } from "./util";
 

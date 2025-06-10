@@ -1,7 +1,18 @@
+/**
+ * Contact.tsx
+ * This file serves as the Contact section of the app,
+ * providing contact information, hours, and links for
+ * directions through Google Maps and Apple Maps.
+ * 
+ * Author: Alexander Daigh
+ * Date: 06-10-2025
+ * Version: 1.0.0
+ */
+
 import { FaPhone } from "react-icons/fa"
 import { PhoneLink, EmailLink } from "./util"
-import g_logo from '../assets/google_logo.png'
-import a_logo from '../assets/apple_maps_logo.png'
+import g_logo from '/images/google_logo.png'
+import a_logo from '/images/apple_maps_logo.png'
 
 export default function Contact() {
     return (

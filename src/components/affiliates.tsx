@@ -1,3 +1,13 @@
+/**
+ * Affiliates.tsx
+ * This file serves as the Affiliates section of the app,
+ * generating elements containing icons and links to the
+ * shop's affiliates.
+ * 
+ * Author: Alexander Daigh
+ * Date: 06-10-2025
+ * Version: 1.0.0
+ */
 
 export default function Affiliates() {
     return (
@@ -21,11 +31,11 @@ export default function Affiliates() {
 }
 
 const sources = [
-    ["audi-logo.png", "Audi USA", "https://www.audi.com"],
-    ["vw-logo.png", "Volkswagen USA", "https://www.vw.com"],
-    ["tz-logo.webp", "Tunezilla", "https://www.tunezilla.com"],
-    ["vcds-logo.png", "VCDS", "https://www.ross-tech.com"],
-    ["liqui-moly-logo.png", "LiquiMoly", "https://www.liqui-moly.com"],
-    ["eurodyne-logo.png", "Eurodyne", "https://www.eurodyne.ca"],
-    ["bmw-logo.png", "BMW USA", "https://www.bmw.com"],
+    ["/images/audi-logo.png", "Audi USA", "https://www.audi.com"],
+    ["/images/vw-logo.png", "Volkswagen USA", "https://www.vw.com"],
+    ["/images/tz-logo.webp", "Tunezilla", "https://www.tunezilla.com"],
+    ["/images/vcds-logo.png", "VCDS", "https://www.ross-tech.com"],
+    ["/images/liqui-moly-logo.png", "LiquiMoly", "https://www.liqui-moly.com"],
+    ["/images/eurodyne-logo.png", "Eurodyne", "https://www.eurodyne.ca"],
+    ["/images/bmw-logo.png", "BMW USA", "https://www.bmw.com"],
 ]

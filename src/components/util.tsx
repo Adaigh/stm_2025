@@ -1,3 +1,15 @@
+/**
+ * Util.tsx
+ * This file serves as a utility file for the app,
+ * containing functions for generating links to the
+ * shop's phone number and email address and some
+ * useful TypeScript declarations.
+ * 
+ * Author: Alexander Daigh
+ * Date: 06-10-2025
+ * Version: 1.0.0
+ */
+
 import { ReactNode } from "react";
 
 type LinkProps = {

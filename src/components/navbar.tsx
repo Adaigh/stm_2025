@@ -1,4 +1,14 @@
-import STM_logo from '../assets/STMlogo.png'
+/**
+ * NavBar.tsx
+ * This file serves as the Navigation Bar component for the app,
+ * containing the logo and navigation links to the About and Shop sections.
+ * 
+ * Author: Alexander Daigh
+ * Date: 06-10-2025
+ * Version: 1.0.0
+ */
+
+import STM_logo from '/images/STMlogo.png'
 
 export default function NavBar() {
     return (
