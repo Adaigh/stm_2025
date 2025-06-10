@@ -43,7 +43,7 @@ I intend to build this website using React and deploying via AWS S3 hosting.
     - Minor refactoring of navbar for mobile spacing.
     - Added working time estimations for personal time tracking.
 
-8. **05-09-2025   (2hrs total)**
+8. **05-09-2025   (2hrs total)**g=s
     - This is gonna be a bulk commit to catch up on little updates I've been doing over the last month.
     - Many styling/structural updates, mostly focused on aesthetics.
     - Uploaded affiliate images but still need to link them to websites.
@@ -71,6 +71,7 @@ I intend to build this website using React and deploying via AWS S3 hosting.
     - Housekeeping for deployment:
         - Added header comments to authored files
         - Moved images to public resource folder
+    - Deployment testing with node "serve"
 
 ## TODO:
 - Link 'about' sections to the words in the hero message?
