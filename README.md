@@ -8,11 +8,11 @@ I intend to build this website using React and deploying via AWS S3 hosting.
 
 1. **03-05-2025 (60 min)**
     - Reconsidered project setup and re-launched from `npm create vite@latest` while transferring relevant files.
-    - Using TS + React + Bootstrap
-    - Tested setup with google fonts and bootstrap CDN link (since CDN is usually already downloaded)
+    - Using TS + React + Bootstrap.
+    - Tested setup with google fonts and bootstrap CDN link (since CDN is usually already downloaded).
 
 2. **03-06-2025 (30 min)**
-    - Stole a few things like phone links and google maps links from old projects
+    - Stole a few things like phone links and google maps links from old projects.
     - Some styling changes to get a general layout for the page info.
     - Minor content updates to better prep the site layout.
 
@@ -47,14 +47,14 @@ I intend to build this website using React and deploying via AWS S3 hosting.
     - This is gonna be a bulk commit to catch up on little updates I've been doing over the last month.
     - Many styling/structural updates, mostly focused on aesthetics.
     - Uploaded affiliate images but still need to link them to websites.
-    - Minor changes to the dev package to make working with sass more convenient (Thanks @concurrently!)
+    - Minor changes to the dev package to make working with sass more convenient. (Thanks @concurrently!)
 
 9. **05-30-2025 (45 min)**
     - Styling and structure updates for contact links.
     - Styling updates for hero links.
     - Styling updates for 'about' headers.
     - Feels like it's almost there!
-    - Realized I had 'main.tsx' in two places, renamed the hero to 'hero.tsx'
+    - Realized I had 'main.tsx' in two places, renamed the hero to 'hero.tsx'.
 
 10. **06-02-2025 (60 min)**
     - Affiliate links implemented.
@@ -64,16 +64,25 @@ I intend to build this website using React and deploying via AWS S3 hosting.
     - Screen-responsive styling adjustments.
 
 11. **06-10-2025 (60 min)**
-    - Added ideas for potential future To-Do's
-    - Refreshed AWS S3 hosting knowledge
-    - Edited page title
-    - Swapped cusom icon for 'favicon'
+    - Added ideas for potential future To-Do's.
+    - Refreshed AWS S3 hosting knowledge.
+    - Edited page title.
+    - Swapped cusom icon for 'favicon'.
     - Housekeeping for deployment:
-        - Added header comments to authored files
-        - Moved images to public resource folder
-    - Deployment testing with node "serve"
+        - Added header comments to authored files.
+        - Moved images to public resource folder.
+    - Deployment testing with node "serve".
+
+12. **06-13-2025 (90 min)**
+    - Added pre-filled `mailto:` link data to email links.
+    - Updated styles for bolded hero text.
+    - Added links from hero to about sections.
+    - Fixed error in 'contact' section buttons.
+    - Minor adjustment to contact links.
+    - Styling adjustments for readabiliy.
+    - Background tile size adjustment.
+    - Added a back-to-top button.
 
 ## TODO:
-- Link 'about' sections to the words in the hero message?
 - Add email form with local storage data retention?
 
