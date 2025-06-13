@@ -15,17 +15,18 @@ export default function About() {
 
     return (
         <div id="about" className="text-dark">
-            <h3>About STM:</h3>
-            <ul>
+            <div className="bg-dark rounded-4 p-3">
+            <h3 className="fs-2 text-center">About STM:</h3>
+            <hr className="text-light"/>
                 {notes.map((val, index) => {
                     var aboutKey = 'about' + index;
                     return (
-                        <li key={aboutKey}>
+                        <p key={aboutKey}>
                             {val}
-                        </li>
+                        </p>
                     )
                 })}
-            </ul>
+                </div>
             <div className="container-fluid ">
                 {Object.keys(services).map((val, index) => {
                     var serviceKey = val + index
@@ -47,9 +48,7 @@ const ServiceList: FC<ListProps> = ({serviceName, parentKey}) => {
 
     return (
         <>
-            <hr className="text-dark"/>
-            <h3 className="fs-4 p-3" key={parentKey}> {serviceName}</h3>
-            <hr className="text-dark"/>
+            <h3 className="fs-3 bg-dark rounded-4 p-3 m-3 d-inline-block" id={serviceName} key={parentKey}> {serviceName}</h3>
             <ul>
                 {services[serviceName].map((v, i) => {
                     var indServiceKey = parentKey + i
