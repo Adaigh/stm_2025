@@ -10,7 +10,7 @@
  */
 
 import { FaPhone } from "react-icons/fa"
-import { PhoneLink, EmailLink } from "./util"
+import { phoneNumber, EmailLink } from "./util"
 import g_logo from '/images/google_logo.png'
 import a_logo from '/images/apple_maps_logo.png'
 
@@ -21,7 +21,7 @@ export default function Contact() {
 
             <ul>
                 <li>
-                    Phone | <PhoneLink />
+                    Phone | {phoneNumber}
                 </li>
                 <li>
                     Email | <EmailLink />
@@ -42,24 +42,24 @@ export default function Contact() {
 function buttons() {
     return (
         <div className="d-flex flex-column flex-md-row gap-3 justify-content-around p-1 p-md-3 align-items-center">
-            <div className="icon-bg-light">
-                <a href="tel:509-893-2367">
+            <a href="tel:509-893-2367">
+                <div className="icon-bg-light">
                     <FaPhone size={40} color="black" />
-                </a>
-            </div>
-            <div className="icon-bg-dark">
-                <a href="https://maps.app.goo.gl/QbksovXGtDDT5ptB9"
-                    target="_blank"
-                    rel="noreferrer">
+                </div>
+            </a>
+            <a href="https://maps.app.goo.gl/QbksovXGtDDT5ptB9"
+                target="_blank"
+                rel="noreferrer">
+                <div className="icon-bg-dark">
                     <img src={g_logo} />
-                </a>
-            </div>
-            <div className="icon-bg-light">
-                <a href="http://maps.apple.com/?address=STM+Tuning+4715,E+Trent+Ave,Spokane,WA,99212"
-                    target="_blank" rel="noreferrer">
+                </div>
+            </a>
+            <a href="http://maps.apple.com/?address=STM+Tuning+4715,E+Trent+Ave,Spokane,WA,99212"
+                target="_blank" rel="noreferrer">
+                <div className="icon-bg-light">
                     <img src={a_logo} />
-                </a>
-            </div>
+                </div>
+            </a>
         </div>
     )
 }
