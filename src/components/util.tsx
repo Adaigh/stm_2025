@@ -6,7 +6,7 @@
  * useful TypeScript declarations.
  * 
  * Author: Alexander Daigh
- * Date: 06-10-2025
+ * Date: 06-13-2025
  * Version: 1.0.0
  */
 
@@ -17,22 +17,41 @@ type LinkProps = {
     children?: ReactNode;
 }
 
+export const phoneNumber = "509-893-2367"
+
 export function PhoneLink({ className }: LinkProps) {
     return (
-        <a className="button-link" href="tel:509-893-2367">
+        <a className="button-link" href={`tel:${phoneNumber}`}>
             <span className={className}>
-                (509) 893-2367
+                ({phoneNumber})
             </span>
         </a>
     )
 }
+
+const emailData = {
+    email: "stmtuning@hotmail.com",
+    subject: "Appointment Request",
+    bodylines: [
+        "Name:",
+        "Phone Number:",
+        "Vehicle Year/Make/Model:",
+        "Vin (Only required for quotes)",
+        "How can we help?"
+    ]
+}
+
+const doubleNewline = "%0D%0A%0D%0A"
 
 
 export function EmailLink({ className, children }: LinkProps) {
 
 
     return (
-        <a className="button-link" href="mailto:stmtuning@hotmail.com">
+        <a
+            className="button-link"
+            href={`mailto:${emailData.email}?subject=${emailData.subject}&body=${emailData.bodylines.join(doubleNewline)}`}
+            >
             <span className={className}>
                 {!children && <>stmtuning@hotmail.com</>}
                 {children}
