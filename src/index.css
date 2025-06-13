@@ -27,7 +27,7 @@ a {
 
 body {
   background: linear-gradient(#212529, rgba(33, 37, 41, 0.5), #212529), url("/images/tile_v1_1.png");
-  background-size: 25rem;
+  background-size: 20rem;
 }
 
 h1,
@@ -51,8 +51,12 @@ h1 {
 }
 
 #about {
-  scroll-margin-top: 50px;
-  text-shadow: 1px 1px 1px #212529;
+  background: radial-gradient(70% 70% at center, rgb(13, 110, 253), transparent);
+  text-shadow: 2px 2px 2px #212529;
+}
+
+#about, #Performance, #Maintenance, #Repairs, #shop {
+  scroll-margin-top: 2rem;
 }
 
 .bg-card, .card-blue, .card-light {
@@ -74,8 +78,11 @@ h1 {
 .card-light * {
   color: #000;
 }
-.card-light h1 {
+.card-light h1, .card-light .fw-bolder {
   text-shadow: 2px 2px 2px #eee;
+}
+.card-light .fw-bolder {
+  cursor: pointer;
 }
 
 .card-blue {
@@ -110,6 +117,19 @@ h1 {
 .icon-bg-dark:hover,
 .icon-bg-light:hover {
   background: rgba(150, 150, 150, 0.8);
+}
+
+.topButton {
+  transition: all 0.3s ease;
+  right: 0;
+}
+
+.topButton.show {
+  top: 0;
+}
+
+.topButton.hide {
+  top: -10%;
 }
 
 @media screen and (min-width: 720px) {

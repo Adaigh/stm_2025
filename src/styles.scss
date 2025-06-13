@@ -30,13 +30,15 @@
 $headerColor: #DFF7FA;
 $fontColor: #eee;
 $bg_dark: #212529;
-$bg_blue: rgba(13, 110, 253, 0.8);
+$bg_blue: rgba(13, 110, 253, 1);
 $bg_light: rgba(207, 226, 255, 0.8);
 $bg_hover: rgba(150, 150, 150, 0.8);
 
 $bg_dark_50: rgba(33, 37, 41, 0.5);
+$bg_blue_80: rgba(13, 110, 253, .8);
 
 $dark_gradient: linear-gradient($bg_dark, $bg_dark_50, $bg_dark);
+$blue_gradient: radial-gradient(70% 70% at center,$bg_blue, transparent);
 
 .clamper {
     width: clamp(300px, 100%, 1000px);
@@ -59,7 +61,7 @@ a {
 
 body {
     background: $dark_gradient, url('/images/tile_v1_1.png');
-    background-size: 25rem;
+    background-size: 20rem;
 }
 
 h1,
@@ -84,8 +86,12 @@ h1 {
 
 // ID-level styles
 #about {
-    scroll-margin-top: 50px;
-    text-shadow: 1px 1px 1px $bg_dark;
+    background: $blue_gradient;
+    text-shadow: 2px 2px 2px $bg_dark;
+}
+
+#about, #Performance, #Maintenance, #Repairs, #shop {
+    scroll-margin-top: 2rem;
 }
 
 // Class-level styles
@@ -116,14 +122,19 @@ h1 {
         color: #000;
     }
 
-    h1 {
+    h1, .fw-bolder {
         text-shadow: 2px 2px 2px $fontColor;
     }
+
+    .fw-bolder {
+        cursor: pointer;
+    }
+
 }
 
 .card-blue {
     @extend .bg-card;
-    background: $bg_blue;
+    background: $bg_blue_80;
 }
 
 .contact-icon {
@@ -156,6 +167,19 @@ h1 {
 .icon-bg-dark:hover,
 .icon-bg-light:hover {
     background: $bg_hover;
+}
+
+.topButton {
+    transition: all 0.3s ease;
+    right: 0;
+}
+
+.topButton.show {
+    top: 0;
+}
+
+.topButton.hide {
+    top: -10%;
 }
 
 @media screen and (min-width: 720px) {
