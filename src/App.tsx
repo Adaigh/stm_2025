@@ -14,12 +14,14 @@ import Hero from "./components/hero"
 import About from "./components/about"
 import Contact from "./components/contact"
 import Affiliates from "./components/affiliates"
+import TopButton from "./components/topbutton"
 
 export default function App() {
 
   return (
-    <div className="">
+    <div>
       <NavBar />
+      <TopButton />
       <Sections />
     </div>
   )
