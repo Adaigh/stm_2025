@@ -6,10 +6,10 @@
   "scripts": {
     "dev": "concurrently \"sass --watch src/styles.scss:src/index.css\" \"vite\"",
     "build": "tsc -b && vite build",
+    "serve": "serve -s dist",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy": "npm run build && serve -s dist",
-    "serve": "serve -s dist"
+    "deploy": "npm run build && npm run serve"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
