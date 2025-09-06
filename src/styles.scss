@@ -31,7 +31,7 @@ $headerColor: #DFF7FA;
 $fontColor: #eee;
 $bg_dark: #212529;
 $bg_blue: rgba(13, 110, 253, 1);
-$bg_light: rgba(207, 226, 255, 0.8);
+$bg_light: rgba(207, 226, 255, 0.6);
 $bg_hover: rgba(150, 150, 150, 0.8);
 
 $bg_dark_50: rgba(33, 37, 41, 0.5);
@@ -60,7 +60,7 @@ a {
 }
 
 body {
-    background: $dark_gradient, url('/images/tile_v1_1.png');
+    background: $dark_gradient, url('/images/tile_v1_1.webp');
     background-size: 20rem;
 }
 
@@ -92,6 +92,11 @@ h1 {
 
 #about, #Performance, #Maintenance, #Repairs, #shop {
     scroll-margin-top: 2rem;
+}
+
+#subtitle {
+    margin-bottom: 0;
+    text-align: center;
 }
 
 // Class-level styles
@@ -193,6 +198,10 @@ h1 {
 
     #about {
         scroll-margin-top: 150px;
+    }
+
+    #subtitle {
+        text-align: end;
     }
 
     .bg-card {

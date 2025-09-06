@@ -26,7 +26,7 @@ a {
 }
 
 body {
-  background: linear-gradient(#212529, rgba(33, 37, 41, 0.5), #212529), url("/images/tile_v1_1.png");
+  background: linear-gradient(#212529, rgba(33, 37, 41, 0.5), #212529), url("/images/tile_v1_1.webp");
   background-size: 20rem;
 }
 
@@ -59,6 +59,11 @@ h1 {
   scroll-margin-top: 2rem;
 }
 
+#subtitle {
+  margin-bottom: 0;
+  text-align: center;
+}
+
 .bg-card, .card-blue, .card-light {
   padding: 5%;
   border-radius: 10px;
@@ -73,7 +78,7 @@ h1 {
 }
 
 .card-light {
-  background: rgba(207, 226, 255, 0.8);
+  background: rgba(207, 226, 255, 0.6);
 }
 .card-light * {
   color: #000;
@@ -141,6 +146,9 @@ h1 {
   }
   #about {
     scroll-margin-top: 150px;
+  }
+  #subtitle {
+    text-align: end;
   }
   .bg-card, .card-light, .card-blue {
     border-radius: 25px;
