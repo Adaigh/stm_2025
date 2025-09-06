@@ -90,7 +90,7 @@ I intend to build this website using React and deploying via AWS S3 hosting.
     - Added missing alt text to images
     - Fixed path for title icon
     - Converted images to webp
-    - Added Lighthouse HTML report
+    - Added Lighthouse PDF report
 
 
 
