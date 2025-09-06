@@ -10,7 +10,7 @@
  */
 
 import { PhoneLink, EmailLink } from "./util"
-import envelope_icon from '/images/envelope-icon.png'
+import envelope_icon from '/images/envelope-icon.webp'
 
 export default function Hero() {
 
@@ -29,8 +29,8 @@ export default function Hero() {
 function title() {
     return (
         <div className="px-2 mx-md-5">
-            <h1 className="">STM Tuning</h1>
-            <h6 className="text-end fs-6 fst-italic text-decoration-underline">- Audi and Volkswagen Garage</h6>
+            <h1 id="title" className="">STM Tuning</h1>
+            <p id="subtitle" className="fs-6 fst-italic text-decoration-underline">- Audi and Volkswagen Garage</p>
         </div>
     )
 }
@@ -39,9 +39,15 @@ function intro() {
     return (
         <p className="m-0 text-center">
             We've been providing <span className="inline-block text-nowrap">
-                <span className="fw-bolder fst-italic"> <a href="#Performance">performance</a></span>,
-                <span className="fw-bolder fst-italic"> <a href="#Maintenance">maintenance</a></span>,
-                and <span className="fw-bolder fst-italic"> <a href="#Repairs">repair</a></span>
+                <span className="fw-bolder fst-italic">
+                    <a href="#Performance" aria-label="Scroll to Performance">performance</a>
+                </span>,
+                <span className="fw-bolder fst-italic">
+                    <a href="#Maintenance" aria-label="Scroll to Maintenance">maintenance</a>
+                </span>,
+                and <span className="fw-bolder fst-italic">
+                    <a href="#Repairs" aria-label="Scroll to Repairs">repair</a>
+                </span>
             </span> work in Spokane, WA for over 20 years!
         </p>
     )
@@ -51,9 +57,7 @@ const buttonClasses = "custom-button d-block p-3 rounded-4 text-light shadow-lg"
 
 function phone() {
     return (
-        <div className="text-center mx-auto">
-            {/* To book an appointment call: */}
-            {/* Call for an appointment! */}
+        <div className="text-center mx-auto" role="button" aria-label="Click to Call">
             <PhoneLink className={buttonClasses} />
         </div>
     )
@@ -61,8 +65,7 @@ function phone() {
 
 function email() {
     return (
-        <div className="text-center mx-auto mb-md-5 vertical-center">
-            {/* Open 9-5, Monday thru Friday */}
+        <div className="text-center mx-auto mb-md-5 vertical-center" role="button" aria-label="Click to Email">
             <EmailLink className={buttonClasses}>
                 <img
                     src={envelope_icon}

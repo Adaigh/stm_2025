@@ -11,8 +11,8 @@
 
 import { FaPhone } from "react-icons/fa"
 import { phoneNumber, EmailLink } from "./util"
-import g_logo from '/images/google_logo.png'
-import a_logo from '/images/apple_maps_logo.png'
+import g_logo from '/images/google_logo.webp'
+import a_logo from '/images/apple_maps_logo.webp'
 
 export default function Contact() {
     return (
@@ -42,22 +42,26 @@ export default function Contact() {
 function buttons() {
     return (
         <div className="d-flex flex-column flex-md-row gap-3 justify-content-around p-1 p-md-3 align-items-center">
-            <a href="tel:509-893-2367">
-                <div className="icon-bg-light">
+            <a href="tel:509-893-2367"
+                aria-label="Click to Call">
+                <div className="icon-bg-light" title="509-893-2367!">
                     <FaPhone size={40} color="black" />
                 </div>
             </a>
             <a href="https://maps.app.goo.gl/QbksovXGtDDT5ptB9"
                 target="_blank"
-                rel="noreferrer">
+                rel="noreferrer"
+                aria-label="Click to View in Google Maps">
                 <div className="icon-bg-dark">
-                    <img src={g_logo} />
+                    <img src={g_logo} alt="Google Maps" />
                 </div>
             </a>
             <a href="http://maps.apple.com/?address=STM+Tuning+4715,E+Trent+Ave,Spokane,WA,99212"
-                target="_blank" rel="noreferrer">
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Click to View in Apple Maps">
                 <div className="icon-bg-light">
-                    <img src={a_logo} />
+                    <img src={a_logo} alt="Apple Maps" />
                 </div>
             </a>
         </div>

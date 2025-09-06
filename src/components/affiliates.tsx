@@ -31,11 +31,11 @@ export default function Affiliates() {
 }
 
 const sources = [
-    ["/images/audi-logo.png", "Audi USA", "https://www.audi.com"],
-    ["/images/vw-logo.png", "Volkswagen USA", "https://www.vw.com"],
+    ["/images/audi-logo.webp", "Audi USA", "https://www.audi.com"],
+    ["/images/vw-logo.webp", "Volkswagen USA", "https://www.vw.com"],
     ["/images/tz-logo.webp", "Tunezilla", "https://www.tunezilla.com"],
-    ["/images/vcds-logo.png", "VCDS", "https://www.ross-tech.com"],
-    ["/images/liqui-moly-logo.png", "LiquiMoly", "https://www.liqui-moly.com"],
-    ["/images/eurodyne-logo.png", "Eurodyne", "https://www.eurodyne.ca"],
-    ["/images/bmw-logo.png", "BMW USA", "https://www.bmw.com"],
+    ["/images/vcds-logo.webp", "VCDS", "https://www.ross-tech.com"],
+    ["/images/liqui-moly-logo.webp", "LiquiMoly", "https://www.liqui-moly.com"],
+    ["/images/eurodyne-logo.webp", "Eurodyne", "https://www.eurodyne.ca"],
+    ["/images/bmw-logo.webp", "BMW USA", "https://www.bmw.com"],
 ]

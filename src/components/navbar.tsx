@@ -8,7 +8,7 @@
  * Version: 1.0.0
  */
 
-import STM_logo from '/images/STMlogo.png'
+import STM_logo from '/images/STMlogo.webp'
 
 export default function NavBar() {
     return (

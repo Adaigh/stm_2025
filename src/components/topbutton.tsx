@@ -20,7 +20,10 @@ export default function TopButton() {
 
     return (
         <div className={`topButton position-fixed p-3 ${showButton ? 'show' : 'hide'}`}>
-            <button className="btn btn-secondary p-2" onClick={handleClick}>
+            <button
+                className="btn btn-secondary p-2"
+                onClick={handleClick}
+                aria-label="Back to top">
                 <FaArrowUp className="fs-3"></FaArrowUp>
             </button>  
         </div>  

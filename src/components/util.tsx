@@ -17,13 +17,13 @@ type LinkProps = {
     children?: ReactNode;
 }
 
-export const phoneNumber = "509-893-2367"
+export const phoneNumber = "(509) 893-2367"
 
 export function PhoneLink({ className }: LinkProps) {
     return (
         <a className="button-link" href={`tel:${phoneNumber}`}>
             <span className={className}>
-                ({phoneNumber})
+                {phoneNumber}
             </span>
         </a>
     )
