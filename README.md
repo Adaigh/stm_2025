@@ -83,6 +83,14 @@ I intend to build this website using React and deploying via AWS S3 hosting.
     - Background tile size adjustment.
     - Added a back-to-top button.
 
-## TODO:
-- Add email form with local storage data retention?
+13. **09-06-2025 (90 min)**
+    - Added meta description
+    - Added robots.txt
+    - Added aria labels
+    - Added missing alt text to images
+    - Fixed path for title icon
+    - Converted images to webp
+    - Added Lighthouse HTML report
+
+
 
