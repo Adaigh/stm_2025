@@ -9,7 +9,7 @@
     "serve": "serve -s dist",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy": "npm run build && npm run serve"
+    "deploy": "sass src/styles.scss:src/index.css && npm run build && npm run serve"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
