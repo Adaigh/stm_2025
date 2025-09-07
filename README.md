@@ -2,7 +2,9 @@
 
 The goal of this project is to create an effective, single-page static website that can be used to greater enhance the visibility of STM Tuning in Spokane, WA while reducing the team's need to interact with the page directly.
 
-I intend to build this website using React and deploying via AWS S3 hosting.
+The site is now LIVE at <https://www.stmspokane.com>
+
+Created using Vite (React/Typescript) and hosted on AWS (S3/Amplify/Route 53)
 
 ### Updates
 
