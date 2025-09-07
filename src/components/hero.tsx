@@ -39,15 +39,9 @@ function intro() {
     return (
         <p className="m-0 text-center">
             We've been providing <span className="inline-block text-nowrap">
-                <span className="fw-bolder fst-italic">
-                    <a href="#Performance" aria-label="Scroll to Performance">performance</a>
-                </span>,
-                <span className="fw-bolder fst-italic">
-                    <a href="#Maintenance" aria-label="Scroll to Maintenance">maintenance</a>
-                </span>,
-                and <span className="fw-bolder fst-italic">
-                    <a href="#Repairs" aria-label="Scroll to Repairs">repair</a>
-                </span>
+                <span className="fw-bolder fst-italic"><a href="#Performance" aria-label="Scroll to Performance">performance</a></span>,
+                <span className="fw-bolder fst-italic"> <a href="#Maintenance" aria-label="Scroll to Maintenance">maintenance</a></span>,
+                and <span className="fw-bolder fst-italic"><a href="#Repairs" aria-label="Scroll to Repairs">repair</a></span>
             </span> work in Spokane, WA for over 20 years!
         </p>
     )
